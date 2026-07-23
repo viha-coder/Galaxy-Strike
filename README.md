@@ -19,6 +19,8 @@ So far, I have:
 
 ## Concepts Learned
 
+---
+
 ### Unity Terrain
 
 - Terrain creation.
@@ -28,6 +30,8 @@ So far, I have:
 - Texture painting.
 - Combining multiple textures to create a more natural environment.
 
+---
+
 ### Timeline
 
 - Creating a Timeline asset.
@@ -36,12 +40,17 @@ So far, I have:
 - Creating a short scripted sequence.
 - Controlling an object's movement through Timeline.
 
+---
+
 ## Current Project Structure
 
 ```text
 Assets/
 Packages/
 ProjectSettings/
+```
+
+---
 
 ## Development Status
 
