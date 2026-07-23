@@ -36,7 +36,7 @@ So far, I have:
 
 ## Development Status
 
-🚧 Project currently in development.
+Project currently in development.
 
 More gameplay systems, visual effects, enemies, shooting mechanics, and improvements will be added as I progress through the project.
 
