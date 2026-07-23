@@ -10,53 +10,35 @@ At this stage, I am building the initial environment and learning new Unity tool
 
 So far, I have:
 
-- Created the first terrain.
-- Used different brushes to shape mountains and valleys.
-- Worked with Terrain Layers.
-- Applied grass, rock, soil, sand, and snow textures.
+- Created the first terrain environment.
+- Shaped mountains and valleys using different terrain brushes.
+- Applied Terrain Layers with grass, rock, soil, sand, and snow textures.
 - Created a short Timeline sequence to move the player ship through the environment.
 - Imported and organized the initial project assets.
 
 ## Concepts Learned
 
----
-
 ### Unity Terrain
 
-- Terrain creation.
-- Terrain sculpting.
-- Brush Size and Brush Strength.
-- Terrain Layers.
-- Texture painting.
-- Combining multiple textures to create a more natural environment.
-
----
+- Creating and configuring a Terrain.
+- Shaping mountains, valleys, and other forms of relief with brushes.
+- Adjusting Brush Size and Brush Strength.
+- Using Terrain Layers to control the textures painted across the environment.
+- Combining different textures to create a more natural-looking landscape.
 
 ### Timeline
 
 - Creating a Timeline asset.
 - Using the Playable Director.
 - Adding an Animation Track.
-- Creating a short scripted sequence.
+- Creating a short animated sequence.
 - Controlling an object's movement through Timeline.
-
----
-
-## Current Project Structure
-
-```text
-Assets/
-Packages/
-ProjectSettings/
-```
-
----
 
 ## Development Status
 
- Project currently in development.
+🚧 Project currently in development.
 
- More gameplay systems, visual effects, enemies, shooting mechanics, and improvements will be added as I progress through the project.
+More gameplay systems, visual effects, enemies, shooting mechanics, and improvements will be added as I progress through the project.
 
 ## Technologies
 
@@ -69,4 +51,4 @@ ProjectSettings/
 
 ## Author
 
-Developed by viha-coder
+Developed by [viha-coder](https://github.com/viha-coder)
