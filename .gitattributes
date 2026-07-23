@@ -1,3 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 Assets/TutorialInfo/** linguist-generated
+Assets/TutorialInfo/Layout.wlt linguist-generated
+
+*.wlt linguist-generated
