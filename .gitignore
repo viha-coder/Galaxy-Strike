@@ -73,3 +73,6 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+/Assets/Imported Assets/3rd Party Assets/USS-Virginia/PSD File/
+/Assets/Imported Assets/3rd Party Assets/USS-Virginia/PSD File.meta
