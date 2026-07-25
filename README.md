@@ -17,7 +17,11 @@ So far, I have:
 - Implemented the `PlayerMovement` script.
 - Added movement boundaries with `Mathf.Clamp()`.
 - Added smooth visual rotation using `Quaternion.Lerp()`.
-
+- Added a laser weapon using Unity's Particle System.
+- Created a `Fire` action using the Unity Input System.
+- Implemented continuous firing while holding the left mouse button.
+- Added support for multiple laser emitters using an array and `foreach`.
+  
 ## Concepts Learned
 
 ### Unity Terrain
@@ -59,11 +63,55 @@ So far, I have:
 - Using `Quaternion.Lerp()` to smoothly transition between rotation values.
 - Applying player input to the visual rotation of the ship.
 
+### Weapon System
+
+- Creating a dedicated `PlayerWeapon` script.
+- Using `InputValue.isPressed` to detect when the fire button is pressed or released.
+- Storing the input state in a boolean variable.
+- Controlling multiple laser emitters with an array and `foreach`.
+
+### Particle System and Visual Effects
+
+- Controlling the Particle System Emission Module through code.
+- Enabling and disabling the Particle System Emission Module to control continuous laser firing.
+- Using an HDR emission color with Bloom to create a glowing laser effect.
+- Configuring imported materials to use compatible URP shaders.
+
+## Problems Solved
+
+### Pink Materials After Importing an Asset
+
+**Problem:**  
+The materials from an Asset Store package appeared completely pink after being imported into the project.
+
+**Cause:**  
+The imported materials were using shaders that were incompatible with the Universal Render Pipeline used by the project.
+
+**Solution:**  
+I changed the materials to use the `Universal Render Pipeline/Lit` shader and reassigned the corresponding textures.
+
+---
+
+### Laser Emission Without a Glow Effect
+
+**Problem:**  
+The laser material had Emission enabled, but it did not produce the glowing effect shown in the course.
+
+**Cause:**  
+Emission makes the material brighter, but the scene did not have Bloom enabled to create the visible glow around it.
+
+**Solution:**  
+I enabled post-processing on the camera, created a Global Volume, added Bloom, and adjusted the HDR emission intensity of the laser material.
+
+---
+
 ## Development Status
 
 Project currently in development.
 
-More gameplay systems, visual effects, enemies, shooting mechanics, and improvements will be added as I progress through the project.
+The project now includes the initial environment, player movement, Timeline-based animations, the first enemy, and a functional laser weapon system using Particle Systems.
+
+The next stages will focus on expanding the gameplay, adding new interactions, and improving the visual and technical polish as I progress through the project.
 
 ## Technologies
 
@@ -74,6 +122,8 @@ More gameplay systems, visual effects, enemies, shooting mechanics, and improvem
 - Unity Input System
 - Git
 - GitHub
+- Unity Particle System
+- Universal Render Pipeline
 
 ## Author
 
