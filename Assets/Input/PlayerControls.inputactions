@@ -23,6 +23,15 @@
                     "processors": "",
                     "interactions": "Press(behavior=2)",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Crosshair",
+                    "type": "PassThrough",
+                    "id": "6cd9b32f-d3b2-49b1-9874-875d41a4f079",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -89,6 +98,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e39620c7-24ef-41c9-ad8e-2909b79461e8",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Crosshair",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
