@@ -6,7 +6,7 @@ The game is inspired by space shooters such as Star Fox and is being developed a
 
 ## Current Development
 
-At this stage, I am building the initial environment and implementing the first gameplay systems.
+At this stage, I am expanding the first combat systems and player interactions.
 
 So far, I have:
 
@@ -18,9 +18,14 @@ So far, I have:
 - Added movement boundaries with `Mathf.Clamp()`.
 - Added smooth visual rotation using `Quaternion.Lerp()`.
 - Added a laser weapon using Unity's Particle System.
-- Created a `Fire` action using the Unity Input System.
-- Implemented continuous firing while holding the left mouse button.
-- Added support for multiple laser emitters using an array and `foreach`.
+- Created a mouse-following crosshair.
+- Used `ScreenToWorldPoint()` to convert the aiming position into world coordinates.
+- Implemented dual laser firing by controlling multiple emitters with an array and `foreach`.
+- Added collision detection for the player ship and enemies.
+- Configured particle collisions for laser impacts.
+- Created explosion particle effects from scratch.
+- Instantiated explosion effects at runtime using `Instantiate()`.
+- Created separate player and enemy explosion effects using Nested Prefabs and Prefab Variants.
   
 ## Concepts Learned
 
@@ -77,6 +82,17 @@ So far, I have:
 - Using an HDR emission color with Bloom to create a glowing laser effect.
 - Configuring imported materials to use compatible URP shaders.
 
+### Combat System
+- Converting screen coordinates into world coordinates with `ScreenToWorldPoint()`.
+- Creating and instantiating particle effects at runtime using `Instantiate()`.
+- Configuring Particle System collision modules.
+- Detecting collisions with `OnTriggerEnter()`.
+
+### Prefab Workflow
+- Creating Nested Prefabs.
+- Creating and using Prefab Variants.
+- Organizing reusable particle effect prefabs.
+
 ## Problems Solved
 
 ### Pink Materials After Importing an Asset
@@ -105,11 +121,42 @@ I enabled post-processing on the camera, created a Global Volume, added Bloom, a
 
 ---
 
+### Trigger Not Firing
+**Problem**
+
+The player's collision callback was never executed.
+
+**Cause**
+
+The player's collider was not configured as Trigger.
+
+**Solution**
+
+Enabled `Is Trigger` on the collider and verified the Rigidbody/Collider configuration.
+
+---
+
+### Large Asset Exceeded GitHub's File Size Limit
+
+**Problem:**
+
+GitHub Desktop warned that an imported PSD file exceeded GitHub's 100 MB file size limit and could not be pushed normally.
+
+**Cause:**
+
+An unused source PSD file from an imported asset package was included in the pending changes.
+
+**Solution:**
+
+I moved the PSD folder outside the Unity project, verified that the game did not depend on it, and added its path to `.gitignore`.
+
+---
+
 ## Development Status
 
 Project currently in development.
 
-The project now includes the initial environment, player movement, Timeline-based animations, the first enemy, and a functional laser weapon system using Particle Systems.
+The project now includes the initial terrain environment, player movement, Timeline-based enemy animations, mouse-controlled aiming, dual laser firing, collision detection, and separate explosion effects for the player and enemies.
 
 The next stages will focus on expanding the gameplay, adding new interactions, and improving the visual and technical polish as I progress through the project.
 
