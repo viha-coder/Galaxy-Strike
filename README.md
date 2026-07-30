@@ -49,6 +49,10 @@ So far, I have:
 - Used Timeline Curves to fine-tune animation values.
 - Adjusted the enemy's rotation at specific moments.
 - Improved the timing and control of the enemy animation.
+- Controlled enemy waves using Control Tracks.
+- Created and synchronized dialogue audio using Audio Tracks.
+- Used Timeline Signals to trigger dialogue text updates.
+- Created the `DialogueLines` script to update UI dialogue lines in sync with the audio.
 
 ### Player Input
 
