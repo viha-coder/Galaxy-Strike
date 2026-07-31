@@ -52,7 +52,13 @@ So far, I have:
 - Controlled enemy waves using Control Tracks.
 - Created and synchronized dialogue audio using Audio Tracks.
 - Used Timeline Signals to trigger dialogue text updates.
+- Added multiple cameras using Control Tracks for dialogue scenes.
+- Synchronized dialogue subtitles, voice lines, and camera transitions.
+
+### UI
+
 - Created the `DialogueLines` script to update UI dialogue lines in sync with the audio.
+- Added character portraits to the dialogue interface.
 
 ### Player Input
 
@@ -96,6 +102,13 @@ So far, I have:
 - Creating Nested Prefabs.
 - Creating and using Prefab Variants.
 - Organizing reusable particle effect prefabs.
+
+### Lighting & Rendering
+
+- Configured Lighting settings.
+- Applied real-time shadows.
+- Configured Post Processing effects.
+- Customized the Skybox to create a more immersive space environment.
 
 ## Problems Solved
 
