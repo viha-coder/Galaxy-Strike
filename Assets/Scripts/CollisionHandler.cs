@@ -3,9 +3,18 @@ using UnityEngine;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] GameObject destroyedVFX;
+
+    GameSceneManager gameSceneManager;
+
+    private void Start()
+    {
+        gameSceneManager = FindAnyObjectByType<GameSceneManager>();
+    }
+
     private void OnTriggerEnter(Collider other) 
     {   
-       Instantiate(destroyedVFX, transform.position, Quaternion.identity);
-       Destroy(this.gameObject);         
+        gameSceneManager.ReloadLevel();
+        Instantiate(destroyedVFX, transform.position, Quaternion.identity);
+        Destroy(this.gameObject);         
     }
 }
