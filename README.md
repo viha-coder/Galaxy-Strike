@@ -4,9 +4,9 @@ Galaxy Strike is a 3D target-shooting game developed in Unity using C#.
 
 The player controls a spaceship and shoots moving enemy targets while progressing through Timeline-controlled waves and cinematic sequences. The project features multiple enemy variants, scoring, dialogue, character portraits, an allied ship, particle-based lasers, terrain, lighting, post-processing, and synchronized gameplay events.
 
-## Download
-
 [Web Version](https://play.unity.com/en/games/ccb15bd5-4415-425e-b606-fc00a6ca02eb/builds-galaxy-strike)
+
+## Download
 
 The Windows version is available on the GitHub Releases page:
 
