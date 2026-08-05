@@ -1,10 +1,10 @@
 # Galaxy Strike
 
-Galaxy Strike is my third Unity project from the Complete C# Unity Game Developer course.
+Galaxy Strike is a 3D target-shooting game developed in Unity using C#.
 
-The game is inspired by space shooters such as Star Fox and is being developed as part of my studies in Unity and C#.
+The player controls a spaceship and shoots moving enemy targets while progressing through Timeline-controlled waves and cinematic sequences. The project features multiple enemy variants, scoring, dialogue, character portraits, an allied ship, particle-based lasers, terrain, lighting, post-processing, and synchronized gameplay events.
 
-## Current Development
+## Development
 
 At this stage, I am expanding the first combat systems and player interactions.
 
@@ -54,6 +54,9 @@ So far, I have:
 - Used Timeline Signals to trigger dialogue text updates.
 - Added multiple cameras using Control Tracks for dialogue scenes.
 - Synchronized dialogue subtitles, voice lines, and camera transitions.
+- Created new Timeline animations for enemy waves and gameplay sequences.
+- Controlled the allied ship's entrance, movement, and laser firing through Timeline.
+- Coordinated enemy appearances, dialogue, audio, cameras, and gameplay events.
 
 ### UI
 
@@ -109,6 +112,18 @@ So far, I have:
 - Applied real-time shadows.
 - Configured Post Processing effects.
 - Customized the Skybox to create a more immersive space environment.
+
+### Enemy System
+
+- Created additional enemy variants with different appearances and hit points.
+- Added new movement animations and flight paths for enemy targets.
+- Organized shared enemy behavior using Prefab Variants.
+
+### Allied Ship
+
+- Added an allied ship that assists the player during the level.
+- Created laser effects for the allied ship.
+- Controlled its entrance, movement, and laser firing using Timeline.
 
 ## Problems Solved
 
@@ -169,13 +184,11 @@ I moved the PSD folder outside the Unity project, verified that the game did not
 
 ---
 
-## Development Status
+## Project Status
 
-Project currently in development.
+✅ Completed (August- 05 - 2026)
 
-The project now includes the initial terrain environment, player movement, Timeline-based enemy animations, mouse-controlled aiming, dual laser firing, collision detection, and separate explosion effects for the player and enemies.
-
-The next stages will focus on expanding the gameplay, adding new interactions, and improving the visual and technical polish as I progress through the project.
+Galaxy Strike is the third project completed during my Unity and C# learning journey.
 
 ## Technologies
 
