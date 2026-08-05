@@ -6,7 +6,7 @@ The player controls a spaceship and shoots moving enemy targets while progressin
 
 ## Download
 
-Web Version: https://play.unity.com/en/games/ccb15bd5-4415-425e-b606-fc00a6ca02eb/builds-galaxy-strike
+[Web Version](https://play.unity.com/en/games/ccb15bd5-4415-425e-b606-fc00a6ca02eb/builds-galaxy-strike)
 
 The Windows version is available on the GitHub Releases page:
 
